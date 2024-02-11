@@ -5,6 +5,10 @@ Implicit Deepfake Generation using NeRF and Gaussian Splatting".
 
 
 
+https://github.com/quereste/implicit-deepfake/assets/56112943/d6ce0820-01e5-4879-9d02-7b6ba9e99ccf
+
+
+
 Link to notebook at Google Colab: https://colab.research.google.com/drive/1Nsq_pm3JQsNCZNXSGNjSNSGPM1N0_6yr?usp=sharing
 
 https://drive.google.com/drive/folders/1ZSUoqH1sv3ln-BuWznnDqSx0-Erg5TZU?usp=sharing

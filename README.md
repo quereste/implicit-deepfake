@@ -1,5 +1,9 @@
 # ImplicitDeepfake
-Repo associated with ImplicitDeepfake paper by prof. Spurek et al.
+
+We would like depict steps to reproduce outcomes we achieved and described in paper "ImplicitDeepfake: Plausible Face-Swapping through
+Implicit Deepfake Generation using NeRF and Gaussian Splatting".
+
+
 
 Link to notebook at Google Colab: https://colab.research.google.com/drive/1Nsq_pm3JQsNCZNXSGNjSNSGPM1N0_6yr?usp=sharing
 
@@ -11,6 +15,8 @@ CelebA
 
 # Citation
 
+We would like to express our gratitude to the authors of Gaussian Splatting and NeRF model, along with the pytorch representation of the latter. We used Gaussian Splatting and NeRF to achieve 3D rendering results.
+
 ```
 @misc{mildenhall2020nerf,
     title={NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis},
@@ -21,7 +27,6 @@ CelebA
     primaryClass={cs.CV}
 }
 ```
-
 ```
 @misc{lin2020nerfpytorch,
   title={NeRF-pytorch},
@@ -45,3 +50,15 @@ CelebA
 }
 ```
 
+As the classical 2D deepfake we used GHOST model.
+
+@article{9851423,  
+         author={Groshev, Alexander and Maltseva, Anastasia and Chesakov, Daniil and Kuznetsov, Andrey and Dimitrov, Denis},  
+         journal={IEEE Access},   
+         title={GHOST—A New Face Swap Approach for Image and Video Domains},   
+         year={2022},  
+         volume={10},  
+         number={},  
+         pages={83452-83462},  
+         doi={10.1109/ACCESS.2022.3196668}
+}

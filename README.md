@@ -51,7 +51,7 @@ We would like to express our gratitude to the authors of Gaussian Splatting and 
 ```
 
 As the classical 2D deepfake we used GHOST model.
-
+```
 @article{9851423,  
          author={Groshev, Alexander and Maltseva, Anastasia and Chesakov, Daniil and Kuznetsov, Andrey and Dimitrov, Denis},  
          journal={IEEE Access},   
@@ -62,3 +62,4 @@ As the classical 2D deepfake we used GHOST model.
          pages={83452-83462},  
          doi={10.1109/ACCESS.2022.3196668}
 }
+```

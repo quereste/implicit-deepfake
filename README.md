@@ -1,5 +1,6 @@
 # ImplicitDeepfake
 Repo associated with ImplicitDeepfake paper by prof. Spurek et al.
+Link to Google Colab notebook: https://colab.research.google.com/drive/1Nsq_pm3JQsNCZNXSGNjSNSGPM1N0_6yr?usp=sharing
 
 https://drive.google.com/drive/folders/1ZSUoqH1sv3ln-BuWznnDqSx0-Erg5TZU?usp=sharing
 

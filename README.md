@@ -5,6 +5,9 @@ Implicit Deepfake Generation using NeRF and Gaussian Splatting". In the aforemen
 
 https://github.com/quereste/implicit-deepfake/assets/56112943/d3d4b024-c137-455e-9121-367b53874af8
 
+# Method
+[ImplicitDeepfake: Plausible Face-Swapping through Implicit Deepfake Generation using NeRF and Gaussian Splatting](https://arxiv.org/pdf/2402.06390.pdf)
+
 # Steps to reproduce
 
 1. Download dataset from link: https://drive.google.com/drive/folders/1ZSUoqH1sv3ln-BuWznnDqSx0-Erg5TZU?usp=sharing

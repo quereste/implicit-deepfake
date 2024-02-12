@@ -22,7 +22,7 @@ Both NeRF and Gaussian Splatting solutions (see citations) work fine, our pipeli
 
 # Notebook for your convenience
 
-We created a Colaboratory notebook that covers steps 2 and 3 from above, assuming the use of Gaussian Splatting as the 3D rendering technique. In case of any doubts, feel free to ask.
+We created a Colaboratory notebook that covers steps 2 and 3 from above, assuming the use of Gaussian Splatting as the 3D rendering technique. Its content is based on similar notebooks from the repos of the matter. In case of any doubts, feel free to ask us.
 
 Link to notebook at Google Colab: https://colab.research.google.com/drive/1Nsq_pm3JQsNCZNXSGNjSNSGPM1N0_6yr?usp=sharing
 

@@ -14,25 +14,25 @@ Now it's possible to use our solution to create 4D deepfake representation. As f
 
 Original video:
 
-https://github.com/quereste/implicit-deepfake/assets/77748206/eefe44cc-dc82-41aa-aace-0b9ad9ba5f03
+![](assets/original_video.mp4)
 
 Face to swap with:
 
-![famous](https://github.com/quereste/implicit-deepfake/assets/77748206/7cc8b29b-3f59-489e-9148-c7e525389a61)
+![](assets/famous.jpg)
 
 
 Output video:
 
-https://github.com/quereste/implicit-deepfake/assets/77748206/584ff317-a15f-4a1a-9c60-c9283475ba79
+![](assets/output_video.mp4)
 
 It's also possible to change facial expressions
-| Original        | Changed expression                         |
-|----------------|-------------------------------------|
-![original_0001](https://github.com/quereste/implicit-deepfake/assets/77748206/68df27f8-e388-4214-b799-f3b30f7fa502) | ![0003](https://github.com/quereste/implicit-deepfake/assets/77748206/b1c5ac27-a4f0-468f-bc15-a337ebd6f204) 
-![original_0002](https://github.com/quereste/implicit-deepfake/assets/77748206/27962fcf-92ba-44ad-a81d-88f22749dfc1) | ![0004](https://github.com/quereste/implicit-deepfake/assets/77748206/3831af4f-ea31-4485-8ab4-16e731bec7b0)
-![original_0003](https://github.com/quereste/implicit-deepfake/assets/77748206/58829095-bb53-4fbd-9b08-8589178b9a05) | ![0009](https://github.com/quereste/implicit-deepfake/assets/77748206/98ac0fbf-8d12-4c58-9ff0-be08896b6b26)
-|![original_0004](https://github.com/quereste/implicit-deepfake/assets/77748206/f1d9ba70-ac53-412c-a38f-ec290309d740) | ![0014](https://github.com/quereste/implicit-deepfake/assets/77748206/52a02830-e07b-435c-ae46-dc35e40b7eeb)
-|![original_0005](https://github.com/quereste/implicit-deepfake/assets/77748206/00ca551e-fb30-4e49-b101-18f0da6fb131) | ![0012](https://github.com/quereste/implicit-deepfake/assets/77748206/f5f8bc70-6b35-4da3-b513-15b482ef0bc2)
+| Original        | Changed expression |
+|-----------------|--------------------|
+| ![original_0001](assets/original_0001.png) | ![changed_0001](assets/changed_0001.png) |
+| ![original_0002](assets/original_0002.png) | ![changed_0002](assets/changed_0002.png) |
+| ![original_0003](assets/original_0003.png) | ![changed_0003](assets/changed_0003.png) |
+| ![original_0004](assets/original_0004.png) | ![changed_0004](assets/changed_0004.png) |
+| ![original_0005](assets/original_0005.png) | ![changed_0005](assets/changed_0005.png) |
 
 
 

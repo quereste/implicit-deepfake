@@ -23,51 +23,13 @@ Output video - https://drive.google.com/file/d/1n3SnPxv6qKjq9pefCE-UiGzgtK20dHjb
 
 
 It's also possible to change facial expressions
-| Original        | Changed expression |
-|-----------------|--------------------|
-| ![original_0001](assets/original_0001.png) | ![changed_0001](assets/changed_0001.png) |
-| ![original_0002](assets/original_0002.png) | ![changed_0002](assets/changed_0002.png) |
-| ![original_0003](assets/original_0003.png) | ![changed_0003](assets/changed_0003.png) |
-| ![original_0004](assets/original_0004.png) | ![changed_0004](assets/changed_0004.png) |
-| ![original_0005](assets/original_0005.png) | ![changed_0005](assets/changed_0005.png) |
-
-
-
-# Steps to reproduce for 3D ImplicitDeepfake
-
-1. Download dataset from link: https://drive.google.com/drive/folders/1ZSUoqH1sv3ln-BuWznnDqSx0-Erg5TZU?usp=sharing
-
-This dataset consists of CelebA picture of Ms. Céline Dion (file: famous.jpg) and a directory with train, validation and test pictures of a base face avatar. With every subdirectory there is associated a .json file, containing camera positions, from which specific photos were taken. We hereby stress, that the face avatar we use in this example comes from this link: 
-https://sketchfab.com/3d-models/tina-head-530fab5eb2aa44f699052624794aeaa9. We are thankful for this piece of work.
-
-2. Convert every photo from the dataset to a 2D deepfake
-
-Use a 2D deepfake of your choice to convert all the pictures from the dataset directory to their deepfake versions, using file famous.jpg as a target photo. For the experiments we conducted in the paper, we used GHOST deepfake (see citations).
-
-3. Pick a 3D rendering model to be rewarded with a 3D deepfake representation of the target person from step 2
-
-Both NeRF and Gaussian Splatting solutions (see citations) work fine, our pipeline does not demand any specific model though. The result from the short illustrative video comes from Gaussian Splatting model.
-
-# Notebook for your convenience
-
-We created a Colaboratory notebook that covers steps 2 and 3 from above, assuming the use of Gaussian Splatting as the 3D rendering technique. Its content is based on similar notebooks from the repos of the matter. In case of any doubts, feel free to ask us.
-
-Link to notebook at Google Colab: https://colab.research.google.com/drive/1Nsq_pm3JQsNCZNXSGNjSNSGPM1N0_6yr?usp=sharing
-
-# Steps to reproduce for 4D ImplicitDeepfake
-1. Download dataset from link: https://syncandshare.lrz.de/getlink/fiFbKE8dEDWYENSr75L9WG/nerface_dataset.zip.
-
-This dataset consists of directory with train, validation and test pictures of a base face avatar. With every subdirectory there is associated a .json file, containing camera positions, from which specific photos were taken.
-
-2. Download photo famous.jpg from link: https://drive.google.com/file/d/1Sss9o6v0aVKN6hP0vz6fNNsWNfjb5ajx/view?usp=sharing
-
-3. Convert every photo from the dataset to a 2D deepfake
-
-Use a 2D deepfake of your choice to convert all the pictures from the dataset directory to their deepfake versions, using file famous.jpg as a target photo. For the experiments we conducted in the paper, we used GHOST deepfake (see citations).
-
-4. Use https://github.com/gafniguy/4D-Facial-Avatars to get 4D avatar facial reconstruction.
-
-   Attention this model requires at least 80GB RAM!
+| Original | After ImplicitDeepfake | Changed expression |
+|-----------------|--------------------|--------------------|
+| ![original_0001](assets/paper_0001.png) | ![original_0001](assets/original_0001.png) | ![changed_0001](assets/changed_0001.png) |
+| ![original_0001](assets/paper_0002.png) | ![original_0002](assets/original_0002.png) | ![changed_0002](assets/changed_0002.png) |
+| ![original_0001](assets/paper_0003.png) | ![original_0003](assets/original_0003.png) | ![changed_0003](assets/changed_0003.png) |
+| ![original_0001](assets/paper_0004.png) | ![original_0004](assets/original_0004.png) | ![changed_0004](assets/changed_0004.png) |
+| ![original_0001](assets/paper_0005.png) | ![original_0005](assets/original_0005.png) | ![changed_0005](assets/changed_0005.png) |
 
 # Citation
 

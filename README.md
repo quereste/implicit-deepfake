@@ -57,7 +57,7 @@ We created a Colaboratory notebook that covers steps 2 and 3 from above, assumin
 
 Link to notebook at Google Colab: https://colab.research.google.com/drive/1Nsq_pm3JQsNCZNXSGNjSNSGPM1N0_6yr?usp=sharing
 
-# Steps to reproduce 4D ImplicitDeepfake
+# Steps to reproduce for 4D ImplicitDeepfake
 1. Download dataset from link: https://syncandshare.lrz.de/getlink/fiFbKE8dEDWYENSr75L9WG/nerface_dataset.zip.
 
 This dataset consists of directory with train, validation and test pictures of a base face avatar. With every subdirectory there is associated a .json file, containing camera positions, from which specific photos were taken.
@@ -119,6 +119,7 @@ We would like to express our gratitude to the authors of Gaussian Splatting and 
 }
 ```
 Big thanks to the authors of the classical 4D Facial Avatars model. We used it to obtain 4D rendering results.
+
 ```
 @InProceedings{Gafni_2021_CVPR,
     author    = {Gafni, Guy and Thies, Justus and Zollh{\"o}fer, Michael and Nie{\ss}ner, Matthias},

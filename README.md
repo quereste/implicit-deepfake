@@ -3,7 +3,7 @@
 We would like depict steps to reproduce outcomes we achieved and described in paper "ImplicitDeepfake: Plausible Face-Swapping through
 Implicit Deepfake Generation using NeRF and Gaussian Splatting". In the aforementioned work we show a novel approach to get 3D deepfake representation of a person using a single 2D photo and a set of images of a base face avatar. Below there is an illustrative movie of such attempt's outcome for Ms. Céline Dion.
 
-<video src="assets/celine.mp4" width="320" height="240" controls></video>
+Result video: https://drive.google.com/file/d/1QOMExYh2PTGzljTxUWHKpn0JJfTlBclQ/view?usp=drive_link
 
 
 # Update: 4D ImplicitDeepfake
@@ -12,18 +12,15 @@ Now it's possible to use our solution to create 4D deepfake representation. As f
 
 
 
-Original video:
-
-<video src="assets/original_video.mp4" width="320" height="240" controls></video>
+Original video - https://drive.google.com/file/d/1almJXLoJ0FJp6amXmAXz-5KbLZH9NLoP/view?usp=sharing
 
 Face to swap with:
 
 ![](assets/famous.jpg)
 
 
-Output video:
+Output video - https://drive.google.com/file/d/1n3SnPxv6qKjq9pefCE-UiGzgtK20dHjb/view?usp=drive_link
 
-<video src="assets/output_video.mp4" width="320" height="240" controls></video>
 
 It's also possible to change facial expressions
 | Original        | Changed expression |

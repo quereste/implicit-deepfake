@@ -19,7 +19,7 @@ Face to swap with:
 ![](assets/famous.jpg)
 
 
-Output video - https://drive.google.com/file/d/1n3SnPxv6qKjq9pefCE-UiGzgtK20dHjb/view?usp=drive_link
+Output video: https://drive.google.com/file/d/1n3SnPxv6qKjq9pefCE-UiGzgtK20dHjb/view?usp=drive_link
 
 
 It's also possible to change facial expressions

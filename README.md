@@ -31,6 +31,12 @@ It's also possible to change facial expressions
 | <img src="assets/paper_0004.png" alt="paper_0004" width="300" height="300"> | <img src="assets/original_0004.png" alt="original_0004" width="300" height="300"> | <img src="assets/changed_0004.png" alt="changed_0004" width="300" height="300"> |
 | <img src="assets/paper_0005.png" alt="paper_0005" width="300" height="300"> | <img src="assets/original_0005.png" alt="original_0005" width="300" height="300"> | <img src="assets/changed_0005.png" alt="changed_0005" width="300" height="300"> |
 
+# Notebook for your convenience
+
+We created a Colaboratory notebook assuming the use of Gaussian Splatting as the 3D rendering technique. Its content is based on similar notebooks from the repos of the matter. In case of any doubts, feel free to ask us.
+
+Link to notebook at Google Colab: https://colab.research.google.com/drive/1jL8rpg2umSB-3JX6F-7mt7nZUD_HrtfD?usp=sharing
+
 # Citation
 
 We would like to express our gratitude to the authors of Gaussian Splatting and NeRF model, along with the pytorch representation of the latter. We used Gaussian Splatting and NeRF to achieve 3D rendering results.

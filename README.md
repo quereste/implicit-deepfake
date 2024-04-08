@@ -25,11 +25,11 @@ Output video: https://drive.google.com/file/d/1n3SnPxv6qKjq9pefCE-UiGzgtK20dHjb/
 It's also possible to change facial expressions
 | Original              | After ImplicitDeepfake | Changed expression  |
 |-----------------|-----------------|-----------------|
-| ![paper_0001](assets/paper_0001.png) | ![original_0001](assets/original_0001.png) | ![changed_0001](assets/changed_0001.png) |
-| ![paper_0002](assets/paper_0002.png) | ![original_0002](assets/original_0002.png) | ![changed_0002](assets/changed_0002.png) |
-| ![paper_0003](assets/paper_0003.png) | ![original_0003](assets/original_0003.png) | ![changed_0003](assets/changed_0003.png) |
-| ![paper_0004](assets/paper_0004.png) | ![original_0004](assets/original_0004.png) | ![changed_0004](assets/changed_0004.png) |
-| ![paper_0005](assets/paper_0005.png) | ![original_0005](assets/original_0005.png) | ![changed_0005](assets/changed_0005.png) |
+| <img src="assets/original_0001.png" alt="original_0001" width="300"> | <img src="assets/paper_0001.png" alt="paper_0001" width="300"> | <img src="assets/changed_0001.png" alt="changed_0001" width="300"> |
+| <img src="assets/original_0002.png" alt="original_0002" width="300"> | <img src="assets/paper_0002.png" alt="paper_0002" width="300"> | <img src="assets/changed_0002.png" alt="changed_0002" width="300"> |
+| <img src="assets/original_0003.png" alt="original_0003" width="300"> | <img src="assets/paper_0003.png" alt="paper_0003" width="300"> | <img src="assets/changed_0003.png" alt="changed_0003" width="300"> |
+| <img src="assets/original_0004.png" alt="original_0004" width="300"> | <img src="assets/paper_0004.png" alt="paper_0004" width="300"> | <img src="assets/changed_0004.png" alt="changed_0004" width="300"> |
+| <img src="assets/original_0005.png" alt="original_0005" width="300"> | <img src="assets/paper_0005.png" alt="paper_0005" width="300"> | <img src="assets/changed_0005.png" alt="changed_0005" width="300"> |
 
 # Citation
 

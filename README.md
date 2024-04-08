@@ -12,7 +12,7 @@ Now it's possible to use our solution to create 4D deepfake representation. As f
 
 
 
-Original video - https://drive.google.com/file/d/1almJXLoJ0FJp6amXmAXz-5KbLZH9NLoP/view?usp=sharing
+Original video: https://drive.google.com/file/d/1almJXLoJ0FJp6amXmAXz-5KbLZH9NLoP/view?usp=sharing
 
 Face to swap with:
 

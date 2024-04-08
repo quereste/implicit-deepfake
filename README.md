@@ -24,7 +24,7 @@ Output video: https://drive.google.com/file/d/1n3SnPxv6qKjq9pefCE-UiGzgtK20dHjb/
 
 It's also possible to change facial expressions
 | Original | After ImplicitDeepfake | Changed expression |
-|-----------------|--------------------|--------------------|
+|-----------------|-----------------|-----------------|
 | ![original_0001](assets/paper_0001.png) | ![original_0001](assets/original_0001.png) | ![changed_0001](assets/changed_0001.png) |
 | ![original_0001](assets/paper_0002.png) | ![original_0002](assets/original_0002.png) | ![changed_0002](assets/changed_0002.png) |
 | ![original_0001](assets/paper_0003.png) | ![original_0003](assets/original_0003.png) | ![changed_0003](assets/changed_0003.png) |

@@ -3,7 +3,10 @@
 We would like depict steps to reproduce outcomes we achieved and described in paper "ImplicitDeepfake: Plausible Face-Swapping through
 Implicit Deepfake Generation using NeRF and Gaussian Splatting". In the aforementioned work we show a novel approach to get 3D deepfake representation of a person using a single 2D photo and a set of images of a base face avatar. Below there is an illustrative movie of such attempt's outcome for Ms. Céline Dion.
 
-Result video: https://drive.google.com/file/d/1QOMExYh2PTGzljTxUWHKpn0JJfTlBclQ/view?usp=drive_link
+Result video:
+
+https://github.com/quereste/implicit-deepfake/assets/77748206/0072ebb6-cf71-4f98-95f3-b58a51612815
+
 
 
 # Update: 4D ImplicitDeepfake
@@ -12,14 +15,23 @@ Now it's possible to use our solution to create 4D deepfake representation. As f
 
 
 
-Original video: https://drive.google.com/file/d/1almJXLoJ0FJp6amXmAXz-5KbLZH9NLoP/view?usp=sharing
+Original video: 
+
+https://github.com/quereste/implicit-deepfake/assets/77748206/ec3dc76a-a215-4d2c-87e2-21617200a768
+
+
 
 Face to swap with:
 
 ![](assets/famous.jpg)
 
 
-Output video: https://drive.google.com/file/d/1n3SnPxv6qKjq9pefCE-UiGzgtK20dHjb/view?usp=drive_link
+Output video:
+
+
+https://github.com/quereste/implicit-deepfake/assets/77748206/62675841-220a-467e-8cd7-b1ce76944168
+
+
 
 
 It's also possible to change facial expressions
@@ -31,11 +43,43 @@ It's also possible to change facial expressions
 | <img src="assets/paper_0004.png" alt="paper_0004" width="300" height="300"> | <img src="assets/original_0004.png" alt="original_0004" width="300" height="300"> | <img src="assets/changed_0004.png" alt="changed_0004" width="300" height="300"> |
 | <img src="assets/paper_0005.png" alt="paper_0005" width="300" height="300"> | <img src="assets/original_0005.png" alt="original_0005" width="300" height="300"> | <img src="assets/changed_0005.png" alt="changed_0005" width="300" height="300"> |
 
+
+
+# Steps to reproduce for 3D ImplicitDeepfake
+
+1. Download dataset from link: https://drive.google.com/drive/folders/1ZSUoqH1sv3ln-BuWznnDqSx0-Erg5TZU?usp=sharing
+
+This dataset consists of CelebA picture of Ms. Céline Dion (file: famous.jpg) and a directory with train, validation and test pictures of a base face avatar. With every subdirectory there is associated a .json file, containing camera positions, from which specific photos were taken. We hereby stress, that the face avatar we use in this example comes from this link:
+https://sketchfab.com/3d-models/tina-head-530fab5eb2aa44f699052624794aeaa9. We are thankful for this piece of work.
+
+2. Convert every photo from the dataset to a 2D deepfake
+
+Use a 2D deepfake of your choice to convert all the pictures from the dataset directory to their deepfake versions, using file famous.jpg as a target photo. For the experiments we conducted in the paper, we used GHOST deepfake (see citations).
+
+3. Pick a 3D rendering model to be rewarded with a 3D deepfake representation of the target person from step 2
+
+Both NeRF and Gaussian Splatting solutions (see citations) work fine, our pipeline does not demand any specific model though. The result from the short illustrative video comes from Gaussian Splatting model.
+
 # Notebook for your convenience
 
-We created a Colaboratory notebook assuming the use of Gaussian Splatting as the 3D rendering technique. Its content is based on similar notebooks from the repos of the matter. In case of any doubts, feel free to ask us.
+We created a Colaboratory notebook that covers steps 2 and 3 from above, assuming the use of Gaussian Splatting as the 3D rendering technique. Its content is based on similar notebooks from the repos of the matter. In case of any doubts, feel free to ask us.
 
-Link to notebook at Google Colab: https://colab.research.google.com/drive/1jL8rpg2umSB-3JX6F-7mt7nZUD_HrtfD?usp=sharing
+Link to notebook at Google Colab: https://colab.research.google.com/drive/1Nsq_pm3JQsNCZNXSGNjSNSGPM1N0_6yr?usp=sharing
+
+# Steps to reproduce for 4D ImplicitDeepfake
+1. Download dataset from link: https://syncandshare.lrz.de/getlink/fiFbKE8dEDWYENSr75L9WG/nerface_dataset.zip.
+
+This dataset consists of directory with train, validation and test pictures of a base face avatar. With every subdirectory there is associated a .json file, containing camera positions, from which specific photos were taken.
+
+2. Download photo famous.jpg from link: https://drive.google.com/file/d/1Sss9o6v0aVKN6hP0vz6fNNsWNfjb5ajx/view?usp=sharing
+
+3. Convert every photo from the dataset to a 2D deepfake
+
+Use a 2D deepfake of your choice to convert all the pictures from the dataset directory to their deepfake versions, using file famous.jpg as a target photo. For the experiments we conducted in the paper, we used GHOST deepfake (see citations).
+
+4. Use https://github.com/gafniguy/4D-Facial-Avatars to get 4D avatar facial reconstruction.
+
+   Attention this model requires at least 80GB RAM!
 
 # Citation
 
@@ -98,14 +142,14 @@ Big thanks to the authors of the classical 4D Facial Avatars model. We used it t
 Big thanks to the authors of the classical 2D deepfake GHOST model.
 
 ```
-@article{9851423,  
-         author={Groshev, Alexander and Maltseva, Anastasia and Chesakov, Daniil and Kuznetsov, Andrey and Dimitrov, Denis},  
-         journal={IEEE Access},   
-         title={GHOST—A New Face Swap Approach for Image and Video Domains},   
-         year={2022},  
-         volume={10},  
-         number={},  
-         pages={83452-83462},  
+@article{9851423,
+         author={Groshev, Alexander and Maltseva, Anastasia and Chesakov, Daniil and Kuznetsov, Andrey and Dimitrov, Denis},
+         journal={IEEE Access},
+         title={GHOST—A New Face Swap Approach for Image and Video Domains},
+         year={2022},
+         volume={10},
+         number={},
+         pages={83452-83462},
          doi={10.1109/ACCESS.2022.3196668}
 }
 ```

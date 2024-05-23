@@ -62,22 +62,20 @@ Both NeRF and Gaussian Splatting solutions (see citations) work fine, our pipeli
 
 # Notebook for your convenience
 
-We created a Colaboratory notebook that covers steps 2 and 3 from above, assuming the use of Gaussian Splatting as the 3D rendering technique. Its content is based on similar notebooks from the repos of the matter. In case of any doubts, feel free to ask us.
-
-Link to notebook at Google Colab: https://colab.research.google.com/drive/1Nsq_pm3JQsNCZNXSGNjSNSGPM1N0_6yr?usp=sharing
+We created a [notebook](https://github.com/quereste/implicit-deepfake/blob/main/demo.ipynb) that covers steps 2 and 3 from above, assuming the use of Gaussian Splatting as the 3D rendering technique. Its content is based on similar notebooks from the repos of the matter. In case of any doubts, feel free to ask us. The notebook needs no further requirements when being run on Google Colab.
 
 # Steps to reproduce for 4D ImplicitDeepfake
-1. Download dataset from link: https://syncandshare.lrz.de/getlink/fiFbKE8dEDWYENSr75L9WG/nerface_dataset.zip.
+1. Download [the dataset](https://syncandshare.lrz.de/getlink/fiFbKE8dEDWYENSr75L9WG/nerface_dataset.zip).
 
 This dataset consists of directory with train, validation and test pictures of a base face avatar. With every subdirectory there is associated a .json file, containing camera positions, from which specific photos were taken.
 
-2. Download photo famous.jpg from link: https://drive.google.com/file/d/1Sss9o6v0aVKN6hP0vz6fNNsWNfjb5ajx/view?usp=sharing
+2. Download [photo famous.jpg](https://drive.google.com/file/d/1Sss9o6v0aVKN6hP0vz6fNNsWNfjb5ajx/view?usp=sharing)
 
 3. Convert every photo from the dataset to a 2D deepfake
 
 Use a 2D deepfake of your choice to convert all the pictures from the dataset directory to their deepfake versions, using file famous.jpg as a target photo. For the experiments we conducted in the paper, we used GHOST deepfake (see citations).
 
-4. Use https://github.com/gafniguy/4D-Facial-Avatars to get 4D avatar facial reconstruction.
+4. Use [4D Facial avatars](https://github.com/gafniguy/4D-Facial-Avatars) to get 4D avatar facial reconstruction.
 
    Attention this model requires at least 80GB RAM!
 
@@ -85,16 +83,6 @@ Use a 2D deepfake of your choice to convert all the pictures from the dataset di
 
 We would like to express our gratitude to the authors of Gaussian Splatting and NeRF model, along with the pytorch representation of the latter. We used Gaussian Splatting and NeRF to achieve 3D rendering results.
 
-```
-@InProceedings{Gafni_2021_CVPR,
-    author    = {Gafni, Guy and Thies, Justus and Zollh{\"o}fer, Michael and Nie{\ss}ner, Matthias},
-    title     = {Dynamic Neural Radiance Fields for Monocular 4D Facial Avatar Reconstruction},
-    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
-    month     = {June},
-    year      = {2021},
-    pages     = {8649-8658}
-}
-```
 ```
 @misc{mildenhall2020nerf,
     title={NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis},
@@ -127,7 +115,7 @@ We would like to express our gratitude to the authors of Gaussian Splatting and 
       url          = {https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/}
 }
 ```
-Big thanks to the authors of the classical 4D Facial Avatars model. We used it to obtain 4D rendering results.
+Big thanks to the authors of the 4D Facial Avatars model. We used it to obtain 4D rendering results.
 
 ```
 @InProceedings{Gafni_2021_CVPR,
@@ -139,7 +127,7 @@ Big thanks to the authors of the classical 4D Facial Avatars model. We used it t
     pages     = {8649-8658}
 }
 ```
-Big thanks to the authors of the classical 2D deepfake GHOST model.
+Last but not least, we hereby cite the 2D deepfake GHOST work that was used in our original pipeline.
 
 ```
 @article{9851423,

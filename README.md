@@ -86,16 +86,6 @@ Use a 2D deepfake of your choice to convert all the pictures from the dataset di
 We would like to express our gratitude to the authors of Gaussian Splatting and NeRF model, along with the pytorch representation of the latter. We used Gaussian Splatting and NeRF to achieve 3D rendering results.
 
 ```
-@InProceedings{Gafni_2021_CVPR,
-    author    = {Gafni, Guy and Thies, Justus and Zollh{\"o}fer, Michael and Nie{\ss}ner, Matthias},
-    title     = {Dynamic Neural Radiance Fields for Monocular 4D Facial Avatar Reconstruction},
-    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
-    month     = {June},
-    year      = {2021},
-    pages     = {8649-8658}
-}
-```
-```
 @misc{mildenhall2020nerf,
     title={NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis},
     author={Ben Mildenhall and Pratul P. Srinivasan and Matthew Tancik and Jonathan T. Barron and Ravi Ramamoorthi and Ren Ng},
@@ -127,7 +117,7 @@ We would like to express our gratitude to the authors of Gaussian Splatting and 
       url          = {https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/}
 }
 ```
-Big thanks to the authors of the classical 4D Facial Avatars model. We used it to obtain 4D rendering results.
+Big thanks to the authors of the 4D Facial Avatars model. We used it to obtain 4D rendering results.
 
 ```
 @InProceedings{Gafni_2021_CVPR,
@@ -139,7 +129,7 @@ Big thanks to the authors of the classical 4D Facial Avatars model. We used it t
     pages     = {8649-8658}
 }
 ```
-Big thanks to the authors of the classical 2D deepfake GHOST model.
+Last but not least, we hereby cite the 2D deepfake GHOST work that was used in our original pipeline.
 
 ```
 @article{9851423,

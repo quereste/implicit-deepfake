@@ -50,11 +50,11 @@
           <h1 class="title is-1 publication-title">ImplicitDeepfake: Plausible Face-Swapping through Implicit Deepfake Generation using NeRF and Gaussian Splatting</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a>Georgii Stanishevskii</a><sup>1</sup>,</span>
+              <a>Georgii Stanishevskii</a><sup>1*</sup>,</span>
             <span class="author-block">
-              <a href="https://utkarshsinha.com">Jakub Steczkiewicz</a><sup>1</sup>,</span>
+              <a href="https://www.linkedin.com/in/jakub-steczkiewicz/">Jakub Steczkiewicz</a><sup>1*</sup>,</span>
             <span class="author-block">
-              <a href="https://jonbarron.info">Tomasz Szczepanik</a><sup>1</sup>,
+              <a href="https://jonbarron.info">Tomasz Szczepanik</a><sup>1*</sup>,
             </span>
             <span class="author-block">
               <a href="http://sofienbouaziz.com">Sławomir Tadeja</a><sup>2</sup>,
@@ -69,7 +69,8 @@
 
           <div class="is-size-5 publication-authors">
             <span class="author-block"><sup>1</sup>Jagiellonian University,</span>
-            <span class="author-block"><sup>2</sup>University of Cambridge</span>
+            <span class="author-block"><sup>2</sup>University of Cambridge</span><br>
+            <span class="author-block"><sup>*</sup>Equal contribution</span>
           </div>
 
           <div class="column has-text-centered">
@@ -103,9 +104,7 @@
                   <span>Google Colab Notebook</span>
                   </a>
               </span>
-              <!-- Dataset Link. -->
             </div>
-
           </div>
         </div>
       </div>
@@ -196,31 +195,28 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We present the first method capable of photorealistically reconstructing a non-rigidly
-            deforming scene using photos/videos captured casually from mobile phones.
+            We present the first model that produces a 3D deepfake. 
           </p>
           <p>
-            Our approach augments neural radiance fields
-            (NeRF) by optimizing an
-            additional continuous volumetric deformation field that warps each observed point into a
-            canonical 5D NeRF.
-            We observe that these NeRF-like deformation fields are prone to local minima, and
-            propose a coarse-to-fine optimization method for coordinate-based models that allows for
-            more robust optimization.
-            By adapting principles from geometry processing and physical simulation to NeRF-like
-            models, we propose an elastic regularization of the deformation field that further
-            improves robustness.
-          </p>
-          <p>
-            We show that <span class="dnerf">Nerfies</span> can turn casually captured selfie
-            photos/videos into deformable NeRF
-            models that allow for photorealistic renderings of the subject from arbitrary
-            viewpoints, which we dub <i>"nerfies"</i>. We evaluate our method by collecting data
-            using a
-            rig with two mobile phones that take time-synchronized photos, yielding train/validation
-            images of the same pose at different viewpoints. We show that our method faithfully
-            reconstructs non-rigidly deforming scenes and reproduces unseen views with high
-            fidelity.
+            Numerous emerging deep-learning techniques have
+            had a substantial impact on computer graphics.
+            Among the most promising breakthroughs are the
+            recent rise of Neural Radiance Fields (NeRFs) and
+            Gaussian Splatting (GS). These two techniques have found
+            many use cases in spatial computing and other
+            domains. On the other hand, the emergence of
+            deepfake methods has sparked considerable controversy. Such techniques can have a form of artificial intelligence-generated videos that closely
+            mimic authentic footage. Using generative models,
+            they can modify facial features, enabling the creation of altered identities or facial expressions that
+            exhibit a remarkably realistic appearance to a real
+            person. Despite these controversies, deepfake can
+            offer a next-generation solution for avatar creation
+            and gaming when of desirable quality. To that end,
+            we show how to combine all these emerging technologies to obtain a more plausible outcome. Our
+            ImplicitDeepfake uses the classical deepfake algorithm to modify all training images separately and
+            then train NeRF and GS on modified faces. Such
+            relatively simple strategies can produce plausible
+            3D deepfake-based avatars.
           </p>
         </div>
       </div>
@@ -251,6 +247,7 @@
             <div class="icon-container">
               <img src="./static/avatars/celine_model.png" alt="Blender model">
               <img src="./static/avatars/celine_famous.jpg" alt="Celine Dion">
+              <img src="./static/avatars/celine_after.png" alt="Celine Dion">
             </div>
             <p>Céline Dion</p>
           </div>
@@ -258,6 +255,7 @@
             <div class="icon-container">
               <img src="./static/avatars/djokovic_model.png" alt="Blender model">
               <img src="./static/avatars/djokovic_famous.jpg" alt="Celine Dion">
+              <img src="./static/avatars/djokovic_after.png" alt="Celine Dion">
             </div>
             <p>Novak Djoković</p>
           </div>
@@ -265,6 +263,7 @@
             <div class="icon-container">
               <img src="./static/avatars/schumacher_model.png" alt="Blender model">
               <img src="./static/avatars/schumacher_famous.jpg" alt="Celine Dion">
+              <img src="./static/avatars/schumacher_after.png" alt="Celine Dion">
             </div>
             <p>Michael Schumacher</p>
           </div>
@@ -383,30 +382,21 @@
     <!-- Concurrent Work. -->
     <div class="columns is-centered">
       <div class="column is-full-width">
-        <h2 class="title is-3">Related Links</h2>
+        <h2 class="title is-3">Acknowledgement</h2>
 
         <div class="content has-text-justified">
           <p>
-            There's a lot of excellent work that was introduced around the same time as ours.
-          </p>
-          <p>
-            <a href="https://arxiv.org/abs/2104.09125">Progressive Encoding for Neural Optimization</a> introduces an idea similar to our windowed position encoding for coarse-to-fine optimization.
-          </p>
-          <p>
-            <a href="https://www.albertpumarola.com/research/D-NeRF/index.html">D-NeRF</a> and <a href="https://gvv.mpi-inf.mpg.de/projects/nonrigid_nerf/">NR-NeRF</a>
-            both use deformation fields to model non-rigid scenes.
-          </p>
-          <p>
-            Some works model videos with a NeRF by directly modulating the density, such as <a href="https://video-nerf.github.io/">Video-NeRF</a>, <a href="https://www.cs.cornell.edu/~zl548/NSFF/">NSFF</a>, and <a href="https://neural-3d-video.github.io/">DyNeRF</a>
-          </p>
-          <p>
-            There are probably many more by the time you are reading this. Check out <a href="https://dellaert.github.io/NeRF/">Frank Dellart's survey on recent NeRF papers</a>, and <a href="https://github.com/yenchenlin/awesome-NeRF">Yen-Chen Lin's curated list of NeRF papers</a>.
+            There's a lot of excellent work that we used in our project.</br>
+            To achieve 3D rendering results we made use of:
+            <ul>
+              <li><a href="https://arxiv.org/abs/2003.08934">NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis</a> and <a href="https://github.com/yenchenlin/nerf-pytorch">its pytorch implementation</a></li>
+              <li><a href="https://arxiv.org/abs/2308.04079">3D Gaussian Splatting for Real-Time Radiance Field Rendering</a> and <a href="https://github.com/graphdeco-inria/gaussian-splatting">its pytorch implementation</a></li>
+            </ul>
+            We'd also like to thank authors of <a href="https://ieeexplore.ieee.org/abstract/document/9851423">2D deepfake GHOST</a> that was used in our original pipeline.
           </p>
         </div>
       </div>
     </div>
-    <!--/ Concurrent Work. -->
-
   </div>
 </section>
 
@@ -414,41 +404,30 @@
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@article{park2021nerfies,
-  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
-  title     = {Nerfies: Deformable Neural Radiance Fields},
-  journal   = {ICCV},
-  year      = {2021},
+    <pre><code>@misc{stanishevskii2024implicitdeepfake,
+      title={ImplicitDeepfake: Plausible Face-Swapping through Implicit Deepfake Generation using NeRF and Gaussian Splatting}, 
+      author={Georgii Stanishevskii and Jakub Steczkiewicz and Tomasz Szczepanik and Sławomir Tadeja and Jacek Tabor and Przemysław Spurek},
+      year={2024},
+      eprint={2402.06390},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
 }</code></pre>
   </div>
 </section>
 
 
-<footer class="footer">
-  <div class="container">
-    <div class="content has-text-centered">
-      <a class="icon-link"
-         href="./static/videos/nerfies_paper.pdf">
-        <i class="fas fa-file-pdf"></i>
-      </a>
-      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
-        <i class="fab fa-github"></i>
-      </a>
-    </div>
+<footer class="footer" style="padding: 25px 0px 25px 0px">
     <div class="columns is-centered">
       <div class="column is-8">
         <div class="content">
-          <p>
+          <p style="text-align: center">
             This website is licensed under a <a rel="license"
                                                 href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
             Commons Attribution-ShareAlike 4.0 International License</a>.
           </p>
-          <p>
-            This means you are free to borrow the <a
-              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
-            we just ask that you link back to this page in the footer.
-            Please remember to remove the analytics code included in the header of the website which
-            you do not want on your website.
+          <p style="text-align: center">
+            The souce code is borrowed from <a href="https://github.com/nerfies/nerfies.github.io">nerfies.</a>
+            We thank the authors for sharing the templates.
           </p>
         </div>
       </div>

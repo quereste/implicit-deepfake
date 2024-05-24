@@ -3,24 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="Deformable Neural Radiance Fields creates free-viewpoint portraits (nerfies) from casually captured videos.">
+        content="ImplicitDeepfake. A novel approach to generate 3D and 4D deepfake representation.">
   <meta name="keywords" content="Deepfake, Gaussian Splatting, NeRF">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>ImplicitDeepfake</title>
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-
-    gtag('js', new Date());
-
-    gtag('config', 'G-PYVRSFMDRL');
-  </script>
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
         rel="stylesheet">
@@ -32,7 +18,6 @@
   <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
-  <link rel="icon" href="./static/images/favicon.svg">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
@@ -50,20 +35,20 @@
           <h1 class="title is-1 publication-title">ImplicitDeepfake: Plausible Face-Swapping through Implicit Deepfake Generation using NeRF and Gaussian Splatting</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a>Georgii Stanishevskii</a><sup>1*</sup>,</span>
+              <a href="https://github.com/ge0rgii">Georgii Stanishevskii</a><sup>1*</sup>,</span>
             <span class="author-block">
               <a href="https://www.linkedin.com/in/jakub-steczkiewicz/">Jakub Steczkiewicz</a><sup>1*</sup>,</span>
             <span class="author-block">
-              <a href="https://jonbarron.info">Tomasz Szczepanik</a><sup>1*</sup>,
+              <a href="https://www.linkedin.com/in/tomasz-szczepanik-168950237/">Tomasz Szczepanik</a><sup>1*</sup>,
             </span>
             <span class="author-block">
-              <a href="http://sofienbouaziz.com">Sławomir Tadeja</a><sup>2</sup>,
+              <a href="https://cyberhuman.io/team-members/slawomir-tadeja/">Sławomir Tadeja</a><sup>2</sup>,
             </span>
             <span class="author-block">
-              <a href="https://www.danbgoldman.com">Jacek Tabor</a><sup>1</sup>,
+              <a href="https://scholar.google.pl/citations?user=zSKYziUAAAAJ">Jacek Tabor</a><sup>1</sup>,
             </span>
             <span class="author-block">
-              <a href="https://homes.cs.washington.edu/~seitz/">Przemysław Spurek</a><sup>1</sup>,
+              <a href="https://scholar.google.pl/citations?user=0kp0MbgAAAAJ">Przemysław Spurek</a><sup>1</sup>,
             </span>
           </div>
 
@@ -75,16 +60,6 @@
 
           <div class="column has-text-centered">
             <div class="publication-links">
-              <!-- PDF Link. -->
-              <span class="link-block">
-                <a href="https://arxiv.org/pdf/2402.06390"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
-                  </span>
-                  <span>Paper</span>
-                </a>
-              </span>
               <span class="link-block">
                 <a href="https://arxiv.org/abs/2402.06390"
                    class="external-link button is-normal is-rounded is-dark">
@@ -116,13 +91,11 @@
   <div class="container is-max-desktop">
     <div class="hero-body">
       <video id="teaser" autoplay muted loop playsinline height="100%">
-        <source src="./static/videos/teaser.mp4"
+        <source src="./static/videos/celine_dion.mp4"
                 type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
-        <span class="dnerf">Nerfies</span> turns selfie videos from your phone into
-        free-viewpoint
-        portraits.
+        <span class="dnerf">ImplicitDeepfake</span> is a one-shot 3D deepfake generator
       </h2>
     </div>
   </div>
@@ -135,49 +108,49 @@
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-steve">
           <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/steve.mp4"
+            <source src="./static/videos/result_1.mp4"
                     type="video/mp4">
           </video>
         </div>
         <div class="item item-chair-tp">
           <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/chair-tp.mp4"
+            <source src="./static/videos/result_2.mp4"
                     type="video/mp4">
           </video>
         </div>
         <div class="item item-shiba">
           <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/shiba.mp4"
+            <source src="./static/videos/result_3.mp4"
                     type="video/mp4">
           </video>
         </div>
         <div class="item item-fullbody">
           <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/fullbody.mp4"
+            <source src="./static/videos/result_4.mp4"
                     type="video/mp4">
           </video>
         </div>
         <div class="item item-blueshirt">
           <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/blueshirt.mp4"
+            <source src="./static/videos/result_5.mp4"
                     type="video/mp4">
           </video>
         </div>
         <div class="item item-mask">
           <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/mask.mp4"
+            <source src="./static/videos/result_6.mp4"
                     type="video/mp4">
           </video>
         </div>
         <div class="item item-coffee">
           <video poster="" id="coffee" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/coffee.mp4"
+            <source src="./static/videos/result_7.mp4"
                     type="video/mp4">
           </video>
         </div>
         <div class="item item-toby">
           <video poster="" id="toby" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/toby2.mp4"
+            <source src="./static/videos/celine_dion.mp4"
                     type="video/mp4">
           </video>
         </div>
@@ -195,45 +168,67 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We present the first model that produces a 3D deepfake. 
+            We present <b>the first model</b> that produces <b>a 3D deepfake</b>. 
+          </p>
+          <img src="./static/images/scheme.png" alt="Pipeline scheme">
+          <p>
+            The idea of our pipeline is symbolically represented in the picture <b>above</b>, although its understanding requires some prior knowledge.
+            <b>Recent development</b> in the area of three dimensional rendering have resulted in emergence of several machine learning models
+            able to retrieve <b>a complete 3D representation</b> of an object from a set of 2D pictures (of quite small level of cardinality - like several dozens)
+            with associated precise positions of camera from which the photos were taken.
           </p>
           <p>
-            Numerous emerging deep-learning techniques have
-            had a substantial impact on computer graphics.
-            Among the most promising breakthroughs are the
-            recent rise of Neural Radiance Fields (NeRFs) and
-            Gaussian Splatting (GS). These two techniques have found
-            many use cases in spatial computing and other
-            domains. On the other hand, the emergence of
-            deepfake methods has sparked considerable controversy. Such techniques can have a form of artificial intelligence-generated videos that closely
-            mimic authentic footage. Using generative models,
-            they can modify facial features, enabling the creation of altered identities or facial expressions that
-            exhibit a remarkably realistic appearance to a real
-            person. Despite these controversies, deepfake can
-            offer a next-generation solution for avatar creation
-            and gaming when of desirable quality. To that end,
-            we show how to combine all these emerging technologies to obtain a more plausible outcome. Our
-            ImplicitDeepfake uses the classical deepfake algorithm to modify all training images separately and
-            then train NeRF and GS on modified faces. Such
-            relatively simple strategies can produce plausible
-            3D deepfake-based avatars.
+            By <b>complete representation</b> we mean that after the model is trained, we can ask it about a view from any angle expressed in real numbers
+            and receive <b>a novel rendered picture</b>. If you have not come across any of such works, we strongly recommend becoming familiar
+            with e.g. <a href="https://antimatter15.com/splat/">3D Gaussian Splatting for Real-Time Radiance Field Rendering</a> and 
+            <a href="https://arxiv.org/abs/2003.08934">NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis</a>. We used
+            both of them as <b>black box tools</b>, measuring which of them will score better in the reconstruction metrics.
+          </p>
+          <p>
+            At the beginning we create <b>a training set</b> of photos of an <b>anonymous</b> 3D model and save the associated camera angles from which
+            the photos were taken. Then we use a classical 2D deepfake model on every photo from the training set, so that we receive
+            a fully compatible input for any of the 3D representation techniques. The experiments we have conducted show that both Gaussian Splatting
+            and NeRF create a <b>plausible</b> representation for such prepared dataset.
+          </p>
+          <p>
+            As you for sure have noticed, the approach is <i>one-shot</i> in terms of number of <b>pictures of person-to-be-mimicked</b>.
+            The base dataset of 2D pictures of the 3D model <b>does not need to have anything in common</b> with the <i>celebrity</i>, although
+            we achieve better results when it bears some resemblance to the target person.
+          </p>
+          <img src="./static/images/2d_deepfake.png" alt="2D image transformation">
+          <p>
+            Above we present an example of a <b>2D image transformation</b>. On the left there is a photo taken using <a href="https://www.blender.org/">blender software</a>
+            of a <a href="https://sketchfab.com/3d-models/tina-head-530fab5eb2aa44f699052624794aeaa9.">3D anonymous model</a> (by <i>anonymous</i> model we mean that the model is a matter of choice).
+            Above the arrow there is a picture from the <a href="https://paperswithcode.com/dataset/celeba-hq">CelebA dataset</a> of Ms. Céline Dion. On the right
+            we present the result of applying <a href="https://github.com/ai-forever/ghost?fbclid=IwAR2WxzCb9RHX56ee7XE5a3pZHyYJtacWr21KxB9GiOraYXN7GS2ia_zvqZQ">GHOST 2D deepfake</a> on anonymous and
+            CelebA photo labelled as <b>target and source</b> respectively. 
+          </p>
+          <p>
+            We process <b>all the photos</b> in the similar manner. Afterwards, we treat them as <b>an input</b> to a 3D representation model
+            to achieve the results presented below.
           </p>
         </div>
       </div>
     </div>
     <!--/ Abstract. -->
+  </div>
+</section>
 
-    <!-- Paper video. -->
+<section class="section">
+  <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Video</h2>
-        <div class="publication-video">
-          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
-                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <h2 class="title is-3">Results</h2>
+        <div class="content has-text-justified">
+          <p>
+            As we already stressed, <b>the strengh of our approach</b> is the ability to retrieve a deepfake view of a person from <b>every possible angle</b> while we were given only one specific photo. 
+          </p>
+          <p>
+            You are free to download a 3D model underneath and play around with it using <a href="https://antimatter15.com/splat/">one of marvelous rendering websites</a> designed for this purpose. Note how the quality of the three dimensional model decreases when the camera view approaches from the behind - that's acceptable as we only aim to mimic the face of the subject. 
+          </p>
         </div>
       </div>
     </div>
-    <!--/ Paper video. -->
   </div>
 </section>
 
@@ -275,109 +270,6 @@
 
 <section class="section">
   <div class="container is-max-desktop">
-
-    <div class="columns is-centered">
-
-      <!-- Visual Effects. -->
-      <div class="column">
-        <div class="content">
-          <h2 class="title is-3">Visual Effects</h2>
-          <p>
-            Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
-            would be impossible without nerfies since it would require going through a wall.
-          </p>
-          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/dollyzoom-stacked.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-      </div>
-      <!--/ Visual Effects. -->
-
-      <!-- Matting. -->
-      <div class="column">
-        <h2 class="title is-3">Matting</h2>
-        <div class="columns is-centered">
-          <div class="column content">
-            <p>
-              As a byproduct of our method, we can also solve the matting problem by ignoring
-              samples that fall outside of a bounding box during rendering.
-            </p>
-            <video id="matting-video" controls playsinline height="100%">
-              <source src="./static/videos/matting.mp4"
-                      type="video/mp4">
-            </video>
-          </div>
-
-        </div>
-      </div>
-    </div>
-    <!--/ Matting. -->
-
-    <!-- Animation. -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Animation</h2>
-
-        <!-- Interpolating. -->
-        <h3 class="title is-4">Interpolating states</h3>
-        <div class="content has-text-justified">
-          <p>
-            We can also animate the scene by interpolating the deformation latent codes of two input
-            frames. Use the slider here to linearly interpolate between the left frame and the right
-            frame.
-          </p>
-        </div>
-        <div class="columns is-vcentered interpolation-panel">
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_start.jpg"
-                 class="interpolation-image"
-                 alt="Interpolate start reference image."/>
-            <p>Start Frame</p>
-          </div>
-          <div class="column interpolation-video-column">
-            <div id="interpolation-image-wrapper">
-              Loading...
-            </div>
-            <input class="slider is-fullwidth is-large is-info"
-                   id="interpolation-slider"
-                   step="1" min="0" max="100" value="0" type="range">
-          </div>
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_end.jpg"
-                 class="interpolation-image"
-                 alt="Interpolation end reference image."/>
-            <p class="is-bold">End Frame</p>
-          </div>
-        </div>
-        <br/>
-        <!--/ Interpolating. -->
-
-        <!-- Re-rendering. -->
-        <h3 class="title is-4">Re-rendering the input video</h3>
-        <div class="content has-text-justified">
-          <p>
-            Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
-            viewpoint such as a stabilized camera by playing back the training deformations.
-          </p>
-        </div>
-        <div class="content has-text-centered">
-          <video id="replay-video"
-                 controls
-                 muted
-                 preload
-                 playsinline
-                 width="75%">
-            <source src="./static/videos/replay.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <!--/ Re-rendering. -->
-
-      </div>
-    </div>
-    <!--/ Animation. -->
-
 
     <!-- Concurrent Work. -->
     <div class="columns is-centered">

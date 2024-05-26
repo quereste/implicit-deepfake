@@ -156,9 +156,11 @@
         </div>
       </div>
     </div>
+    <h2 class="subtitle has-text-centered">
+      <span>3D avatars after <span class="dnerf">ImplicitDeepfake</span>
+    </h2>
   </div>
 </section>
-
 
 <section class="section">
   <div class="container is-max-desktop">
@@ -168,34 +170,29 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We present <b>the first model</b> that produces <b>a 3D deepfake</b>. 
+            We present <b>the first model</b> that produces <b>a 3D deepfake</b>.
           </p>
           <img src="./static/images/scheme.png" alt="Pipeline scheme">
+          <h6 class="subtitle has-text-centered">
+            <span class="dnerf">ImplicitDeepfake</span> idea diagram
+          </h6>
           <p>
             The idea of our pipeline is symbolically represented in the picture <b>above</b>, although its understanding requires some prior knowledge.
-            <b>Recent development</b> in the area of three dimensional rendering have resulted in emergence of several machine learning models
-            able to retrieve <b>a complete 3D representation</b> of an object from a set of 2D pictures (of quite small level of cardinality - like several dozens)
-            with associated precise positions of camera from which the photos were taken.
+          </p> 
+          <p> 
+            Our pipeline leverages recent advancements in 3D rendering using machine learning models that can generate a complete 3D representation of an object from a set of 2D pictures, provided with precise camera positions. These models, such as <a href="https://antimatter15.com/splat/">3D Gaussian Splatting for Real-Time Radiance Field Rendering </a> and <a href="https://arxiv.org/abs/2003.08934">NeRF (Neural Radiance Fields)</a>, allow us to obtain novel views from any angle once trained.
+          </p>
+          <p> 
+            The process begins by creating a training set of photos of an anonymous 3D model, along with the associated camera angles. We then apply a classical 2D deepfake model to each photo, producing a dataset compatible with 3D representation techniques. Our experiments show that both Gaussian Splatting and NeRF can create a plausible 3D representation from this dataset.
           </p>
           <p>
-            By <b>complete representation</b> we mean that after the model is trained, we can ask it about a view from any angle expressed in real numbers
-            and receive <b>a novel rendered picture</b>. If you have not come across any of such works, we strongly recommend becoming familiar
-            with e.g. <a href="https://antimatter15.com/splat/">3D Gaussian Splatting for Real-Time Radiance Field Rendering</a> and 
-            <a href="https://arxiv.org/abs/2003.08934">NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis</a>. We used
-            both of them as <b>black box tools</b>, measuring which of them will score better in the reconstruction metrics.
+            This approach is one-shot, requiring only a single set of photos of the person to be mimicked. The initial 2D pictures of the 3D model do not need to resemble the target person, although some resemblance can enhance the results.
           </p>
-          <p>
-            At the beginning we create <b>a training set</b> of photos of an <b>anonymous</b> 3D model and save the associated camera angles from which
-            the photos were taken. Then we use a classical 2D deepfake model on every photo from the training set, so that we receive
-            a fully compatible input for any of the 3D representation techniques. The experiments we have conducted show that both Gaussian Splatting
-            and NeRF create a <b>plausible</b> representation for such prepared dataset.
-          </p>
-          <p>
-            As you for sure have noticed, the approach is <i>one-shot</i> in terms of number of <b>pictures of person-to-be-mimicked</b>.
-            The base dataset of 2D pictures of the 3D model <b>does not need to have anything in common</b> with the <i>celebrity</i>, although
-            we achieve better results when it bears some resemblance to the target person.
-          </p>
+          <h3 class="subtitle has-text-centered">Example</h3>
           <img src="./static/images/2d_deepfake.png" alt="2D image transformation">
+          <h6 class="subtitle has-text-centered">
+            <span>2D image transformation</span>
+          </h6>
           <p>
             Above we present an example of a <b>2D image transformation</b>. On the left there is a photo taken using <a href="https://www.blender.org/">blender software</a>
             of a <a href="https://sketchfab.com/3d-models/tina-head-530fab5eb2aa44f699052624794aeaa9.">3D anonymous model</a> (by <i>anonymous</i> model we mean that the model is a matter of choice).
@@ -224,7 +221,13 @@
             As we already stressed, <b>the strengh of our approach</b> is the ability to retrieve a deepfake view of a person from <b>every possible angle</b> while we were given only one specific photo. 
           </p>
           <p>
-            You are free to download a 3D model underneath and play around with it using <a href="https://antimatter15.com/splat/">one of marvelous rendering websites</a> designed for this purpose. Note how the quality of the three dimensional model decreases when the camera view approaches from the behind - that's acceptable as we only aim to mimic the face of the subject. 
+            You are free to play around with some pretrained 3D models:
+            <ol>
+              <li>Download one of the 3D models below</li>
+              <li>Go to <a href="https://antimatter15.com/splat/">this marvelous rendering website</a></li>
+              <li>Drag and drop downloaded file</li>
+            </ol>
+            Note how the quality of the three dimensional model decreases when the camera view approaches from the behind - that's acceptable as we only aim to mimic the face of the subject. 
           </p>
         </div>
       </div>
@@ -236,29 +239,29 @@
   <div class="container is-max-desktop">
     <div class="columns is-centered">
       <div class="column has-text-centered">
-        <h2 class="title is-3">Click to download ready to view 3D model</h2>
+        <h2 class="title is-3">Click to download pretrained 3D model</h2>
         <div class="menu-avatars-icons">
           <div class="menu-avatars-item" data-file="celine.ply">
             <div class="icon-container">
               <img src="./static/avatars/celine_model.png" alt="Blender model">
               <img src="./static/avatars/celine_famous.jpg" alt="Celine Dion">
-              <img src="./static/avatars/celine_after.png" alt="Celine Dion">
+              <img src="./static/avatars/celine_after.png" alt="Belender model after ImplicitDeepfake">
             </div>
             <p>Céline Dion</p>
           </div>
           <div class="menu-avatars-item" data-file="djokovic.ply">
             <div class="icon-container">
               <img src="./static/avatars/djokovic_model.png" alt="Blender model">
-              <img src="./static/avatars/djokovic_famous.jpg" alt="Celine Dion">
-              <img src="./static/avatars/djokovic_after.png" alt="Celine Dion">
+              <img src="./static/avatars/djokovic_famous.jpg" alt="Novak Djoković">
+              <img src="./static/avatars/djokovic_after.png" alt="Belender model after ImplicitDeepfake">
             </div>
             <p>Novak Djoković</p>
           </div>
           <div class="menu-avatars-item" data-file="schumacher.ply">
             <div class="icon-container">
               <img src="./static/avatars/schumacher_model.png" alt="Blender model">
-              <img src="./static/avatars/schumacher_famous.jpg" alt="Celine Dion">
-              <img src="./static/avatars/schumacher_after.png" alt="Celine Dion">
+              <img src="./static/avatars/schumacher_famous.jpg" alt="Michael Schumacher">
+              <img src="./static/avatars/schumacher_after.png" alt="Belender model after ImplicitDeepfake">
             </div>
             <p>Michael Schumacher</p>
           </div>

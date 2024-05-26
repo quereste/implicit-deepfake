@@ -9,7 +9,6 @@ function downloadJSON(fileName) {
   document.body.removeChild(a);
 }
 
-
 $(document).ready(function() {
     
     var options = {
@@ -40,15 +39,6 @@ $(document).ready(function() {
     		console.log(state);
     	});
     }
-
-    /*var player = document.getElementById('interpolation-video');
-    player.addEventListener('loadedmetadata', function() {
-      $('#interpolation-slider').on('input', function(event) {
-        console.log(this.value, player.duration);
-        player.currentTime = player.duration / 100 * this.value;
-      })
-    }, false);*/
-   
 
     bulmaSlider.attach();
     const menuItems = document.querySelectorAll('.menu-avatars-item') ?? [];

@@ -65,7 +65,7 @@ Both NeRF and Gaussian Splatting solutions (see citations) work fine, our pipeli
 We created a [notebook](https://github.com/quereste/implicit-deepfake/blob/main/demo.ipynb) that covers steps 2 and 3 from above, assuming the use of Gaussian Splatting as the 3D rendering technique. Its content is based on similar notebooks from the repos of the matter. In case of any doubts, feel free to ask us. The notebook needs no further requirements when being run on Google Colab.
 
 # Steps to reproduce for 4D ImplicitDeepfake
-1. Download [the dataset](https://kaldir.vc.in.tum.de/nerface/nerface_dataset.zip) (as noted [here](https://github.com/gafniguy/4D-Facial-Avatars/tree/main?tab=readme-ov-file).
+1. Download [the dataset](https://kaldir.vc.in.tum.de/nerface/nerface_dataset.zip) (as noted [here](https://github.com/gafniguy/4D-Facial-Avatars/tree/main?tab=readme-ov-file)).
 
 This dataset consists of directory with train, validation and test pictures of a base face avatar. With every subdirectory there is associated a .json file, containing camera positions, from which specific photos were taken.
 

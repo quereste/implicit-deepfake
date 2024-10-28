@@ -49,8 +49,8 @@ It's also possible to change facial expressions
 
 1. Download dataset from link: https://drive.google.com/drive/folders/1ZSUoqH1sv3ln-BuWznnDqSx0-Erg5TZU?usp=sharing
 
-This dataset consists of CelebA picture of Ms. Céline Dion (file: famous.jpg) and a directory with train, validation and test pictures of a base face avatar. With every subdirectory there is associated a .json file, containing camera positions, from which specific photos were taken. We hereby stress, that the face avatar we use in this example comes from this link:
-https://sketchfab.com/3d-models/tina-head-530fab5eb2aa44f699052624794aeaa9. We are thankful for this piece of work.
+This dataset consists of CelebA picture of Ms. Céline Dion (file: famous.jpg) and a directory with train, validation and test pictures of a base face avatar. With every subdirectory there is associated a .json file, containing camera positions, from which specific photos were taken. We hereby stress, that the face avatar we use in this example comes from this [link](
+https://sketchfab.com/3d-models/tina-head-530fab5eb2aa44f699052624794aeaa9). We are thankful for this piece of work.
 
 2. Convert every photo from the dataset to a 2D deepfake
 
@@ -80,6 +80,8 @@ Use a 2D deepfake of your choice to convert all the pictures from the dataset di
    Attention this model requires at least 80GB RAM!
 
 # Citation
+
+Another 3D model we used was expertly created by Author [here](https://sketchfab.com/3d-models/micha-3d-photoscanned-human-face-c49a92f2bd6c4ec0a488bdc0e381d31c).
 
 We would like to express our gratitude to the authors of Gaussian Splatting and NeRF model, along with the pytorch representation of the latter. We used Gaussian Splatting and NeRF to achieve 3D rendering results.
 

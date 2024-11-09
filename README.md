@@ -1,5 +1,7 @@
 # ImplicitDeepfake
 
+[arxiv](https://arxiv.org/abs/2402.06390) | [project page](https://quereste.github.io/implicit-deepfake/)
+
 We would like depict steps to reproduce outcomes we achieved and described in paper "ImplicitDeepfake: Plausible Face-Swapping through
 Implicit Deepfake Generation using NeRF and Gaussian Splatting". In the aforementioned work we show a novel approach to get 3D deepfake representation of a person using a single 2D photo and a set of images of a base face avatar. Below there is an illustrative movie of such attempt's outcome for Ms. Céline Dion.
 
@@ -47,7 +49,7 @@ It's also possible to change facial expressions
 
 # Steps to reproduce for 3D ImplicitDeepfake
 
-1. Download dataset from link: https://drive.google.com/drive/folders/1ZSUoqH1sv3ln-BuWznnDqSx0-Erg5TZU?usp=sharing
+1. Download dataset from [link](https://drive.google.com/drive/folders/1ZSUoqH1sv3ln-BuWznnDqSx0-Erg5TZU?usp=sharing)
 
 This dataset consists of CelebA picture of Ms. Céline Dion (file: famous.jpg) and a directory with train, validation and test pictures of a base face avatar. With every subdirectory there is associated a .json file, containing camera positions, from which specific photos were taken. We hereby stress, that the face avatar we use in this example comes from this [link](
 https://sketchfab.com/3d-models/tina-head-530fab5eb2aa44f699052624794aeaa9). We are thankful for this piece of work.

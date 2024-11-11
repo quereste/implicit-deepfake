@@ -221,7 +221,7 @@ deepfake-based avatars.
           <p>
             Above we present an example of a <b>2D image transformation</b>. On the left there is a photo taken using <a href="https://www.blender.org/">blender software</a>
             of a <a href="https://sketchfab.com/3d-models/tina-head-530fab5eb2aa44f699052624794aeaa9.">3D anonymous model</a> (by <i>anonymous</i> model we mean that the model is a matter of choice).
-            Above the arrow there is a picture from the <a href="https://paperswithcode.com/dataset/celeba-hq">CelebA dataset</a> of Ms. Céline Dion. On the right
+            Above the arrow there is a picture from the <a href="https://paperswithcode.com/dataset/celeba-hq">CelebA dataset</a> of Ms Céline Dion. On the right
             we present the result of applying <a href="https://github.com/ai-forever/ghost?fbclid=IwAR2WxzCb9RHX56ee7XE5a3pZHyYJtacWr21KxB9GiOraYXN7GS2ia_zvqZQ">GHOST 2D deepfake</a> on anonymous and
             CelebA photo labelled as <b>target and source</b> respectively. 
           </p>
@@ -293,6 +293,46 @@ deepfake-based avatars.
         </div>
       </div>
     </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">ImplicitDeepfake 4D</h2>
+        <div class="content has-text-justified">
+          <p>
+            Our algorithm when utilized frame per frame gives decent results while preparing<b>4D deepfake</b> where
+            time is the forth dimension. Below we present how a sample movie from the dataset created for NeRFace work can 
+            be effectively changed so that it resembles Mr Matt Passmore.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-steve">
+          <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/original_video.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-chair-tp">
+          <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/output_video.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+    </div>
+    <h2 class="subtitle has-text-centered">
+      <span>Effects of transforming movies using <span class="dnerf">ImplicitDeepfake</span>
+    </h2>
   </div>
 </section>
 

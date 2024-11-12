@@ -1,0 +1,53 @@
+model_1 prompt_1
+
+Positive Prompt:
+"Realistic portrait of a teenage version of a white male, with light facial hair, youthful and smooth skin, bright expressive eyes, and short stylish hair. Facial features should be natural and proportional, reflecting youthful energy. Styled like a photo from a family album, with soft tones and natural lighting. Regardless of the angle (front, side, back view), maintain realism and quality."
+
+Negative Prompt:
+"Adult features, overly mature beard, deep wrinkles, distorted proportions, heavy shadows, and blurred details."
+
+
+model_1 prompt_2
+
+Positive Prompt:
+"Photo of a head with realistic facial features, hair color changed to vibrant red, smooth and lifelike skin texture, sharp and expressive eyes, natural human proportions, high-definition detail, consistent appearance from all angles (front, side, back view), cinematic composition, trending on ArtStation."
+
+Negative Prompt:
+"Unrealistic colors, distorted proportions, blurred details, heavy shadows, lack of detail."
+
+
+model_2 prompt_1
+
+Positive Prompt:
+"photo of Sci fi cute girl, pink hair, photorealistic, in the style of franciszek starowieyski, white porcelain sci fi, mecha, 32k uhd, machine aesthetics, dark white and azure, hans zatzka, silver and pink, science fiction city,shiny pink hair, half body, oil painting, black background"
+
+Negative Prompt:
+"deformed, disfigured, ugly"
+
+
+model_2 prompt_2
+
+Positive Prompt:
+"Photo of a bronze bust of a woman, detailed and lifelike, in the style of Auguste Rodin, polished bronze, classical sculpture aesthetics, 32k uhd, timeless and elegant, intricate details, full head and shoulders, museum quality, realistic texture, warm bronze tones, photorealistic, black background."
+
+Negative Prompt:
+"Deformed, disfigured, ugly."
+
+
+model_3 prompt_1
+
+Positive Prompt:
+"Photo of a smiling bald European male, detailed and lifelike, in the style of Yousuf Karsh, cheerful and approachable, 32k uhd, smooth and clear skin, sharp facial features, bright and expressive eyes, classic European appearance, high-definition detail, natural and friendly smile, wearing a simple yet stylish outfit, black background, cinematic lighting, photorealistic, studio portrait."
+
+Negative Prompt:
+"Distorted, blurry, unrealistic features, poor lighting, low detail, sad expression."
+
+
+model_3 prompt_2
+
+Positive Prompt:
+"An elf, with pointed ears, ethereal and elegant features, detailed and lifelike, in the style of Alan Lee, smooth and flawless skin, sharp and expressive eyes, long and flowing hair, otherworldly and mystical appearance, 32k uhd, high-definition detail, wearing simple yet stylish elven attire, black background, cinematic lighting, photorealistic, studio portrait."
+
+Negative Prompt:
+"Distorted, disfigured, ugly, human features, unrealistic proportions, poor lighting, low detail."
+

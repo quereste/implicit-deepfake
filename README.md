@@ -1,6 +1,6 @@
 # Deepfake for the Good
 
-[arxiv](https://arxiv.org/abs/2402.06390) | [project page](https://quereste.github.io/implicit-deepfake/)
+[arxiv](https://arxiv.org/abs/2402.06390) | [project page](https://quereste.github.io/deepfake-for-the-good/)
 
 We would like depict steps to reproduce outcomes we achieved and described in paper "Deepfake for the Good: Generating Avatars through Face-Swapping with
 Implicit Deepfake Generation". In the aforementioned work we show a novel approach to get 3D deepfake representation of a person using a single 2D photo and a set of images of a base face avatar. Below there is an illustrative movie of such attempt's outcome for Ms. Céline Dion.
